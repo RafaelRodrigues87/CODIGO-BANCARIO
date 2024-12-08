@@ -1,0 +1,166 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Fonte melhorada */
+    background-color: #f9f9f9; /* Fundo claro */
+    background-image: url('../img/fundo2.svg');
+     /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px; /* Adiciona um pequeno padding ao redor */
+  }
+  
+  /* Título principal */
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; /* Tamanho grande do título */
+    font-weight: 700; /* Torna o texto mais grosso */
+    color: #8a2be2; /* Cor roxa vibrante */
+    text-align: center;
+    margin-bottom: 30px; /* Espaço embaixo */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao título */
+  }
+  
+  /* Caixa flutuante */
+  .container {
+    width: 100%;
+    max-width: 450px; /* Limita o tamanho máximo da caixa */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: all 0.3s ease; /* Adiciona transição suave ao layout */
+    border: 2px solid #8a2be2; /* Adiciona borda roxa à caixa */
+  }
+  
+  .container:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+  }
+  
+  /* Label */
+  .label-banco {
+    font-size: 1rem;
+    font-weight: 600; /* Torna o texto mais forte */
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Input de código do banco */
+  #codigo_banco {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #8a2be2; /* Borda roxa */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  #codigo_banco:focus {
+    border-color: #8a2be2; /* Borda roxa ao focar */
+    background-color: #f3faff; /* Fundo claro ao focar */
+    outline: none;
+  }
+  
+  /* Botão */
+  #btn-fetch {
+    width: 100%;
+    padding: 15px;
+    background-color: #8a2be2; /* Cor de fundo roxa */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #btn-fetch:hover {
+    background-color: #6a1d9e; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+  }
+  
+  /* Carregando */
+  h3 {
+    color: #888;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Resultado encontrado */
+  #resultado_banco {
+    margin-top: 30px;
+    background-color: #eafaf1;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #8a2be2; /* Borda esquerda roxa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  #resultado_banco h3 {
+    color: #8a2be2; /* Cor roxa para o título */
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: #333;
+  }
+  
+  #resultado_banco p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  /* Mensagem quando não houver banco encontrado */
+  #result {
+    margin-top: 30px;
+    color: #888;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      padding: 25px;
+    }
+  
+    h1 {
+      font-size: 2rem; /* Tamanho menor no celular */
+      margin-bottom: 20px;
+    }
+  
+    #codigo_banco, #btn-fetch {
+      padding: 12px; /* Reduz o padding em telas menores */
+    }
+  
+    #codigo_banco {
+      font-size: 0.9rem;
+    }
+  
+    #btn-fetch {
+      font-size: 1rem;
+    }
+  }
+  
