@@ -10,7 +10,7 @@
     background-color: #f9f9f9; /* Fundo claro */
     background-image: url('../img/fundo2.svg');
      /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center;
+    background-position:top center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@
   /* Resultado encontrado */
   #resultado_banco {
     margin-top: 30px;
-    background-color: #eafaf1;
+    background-color: #c7f7db;
     padding: 25px;
     border-radius: 8px;
     border-left: 5px solid #8a2be2; /* Borda esquerda roxa */
